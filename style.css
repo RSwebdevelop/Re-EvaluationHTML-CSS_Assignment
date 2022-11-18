@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ /* Header section starts from here */
+
+ #upper_container{
+    width:100%;
+    background-image:url("rocket.png");
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size:100% 80vh;
+ }
+#upper_container header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 10vh;
+    align-items: center;
+}
+#upper_container img{
+    width: 4%;
+    margin: 1% 10%
+}
+#upper_container ul{
+    display: flex;
+    justify-content:space-around;
+    width: 40%;
+    color:white;
+}
+#upper_container ul li{
+    list-style: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+#upper_container ul li:hover{
+    color:peachpuff;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+.fa{
+    display: none;
+}
+
+/* Main Section-1 starts from here */
+
+#middle_container1{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 220px;
+}
+.logo{
+    width:100%;
+    height:100%;
+}
+
+/* Main Section-2 starts from here */
+
+#middle_container2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(8, 100px);
+    background-color: rgb(193, 213, 215);
+}
+#tab{
+    grid-row: 1/4;
+}
+.tab-info{
+    background-color: rgb(197, 196, 196);
+    grid-row:1/3;
+}
+#phone{
+    grid-row: 3/6;
+}
+.phone-info{
+    background-color:rgb(189, 185, 173);
+    grid-row:4/6;
+}
+#pc{
+    grid-row:6/9;
+}
+.pc-info{
+    background-color:rgb(241, 169, 144);
+    grid-row:6/8;
+}
+.img{
+    width:100%;
+    height: 100%;
+}
+#heading{
+    font-style: italic;
+    font-size: 1.6rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 3%;
+}
+#p{
+    margin-top: 3%;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    text-align: justify;
+    font-style: italic;
+    color:white;
+    margin-left: 1%;
+}
+
+#middle_container3{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 280px;
+}
+#google-search{
+    background-color: rgb(161, 177, 194);
+    overflow: hidden;
+}
+#marketing{
+    background-color: rgb(189, 185, 140);
+    overflow: hidden;
+}
+#customers{
+    background-color: rgb(170, 220, 209);
+    overflow: hidden;
+}
+.para{
+    margin: 9% 15px;
+}
+
+#middle_container4{
+    width:100%;
+    height:80px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color:rgb(170, 220, 209);
+    font-size: 40px;
+}
+
+/* Footer section starts here */
+
+#footer_starts{
+    width: 100%;
+    height:150px;
+    background-color:rgb(105, 145, 171);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+i{
+    color:white;
+    font-size: 3rem;
+ }
+
+.footer_ends{
+    width: 100%;
+    height: 50px;
+    color: white;
+    padding-top: 20px;
+    background-color: rgb(85, 72, 89);
+    font-size: 1em;
+    text-align: center;
+    justify-content: center;
+}
+
+@media screen and (max-width:490px){
+    #upper_container{
+        height: 40vh;
+        background-size: 100% 40vh;
+     }
+     #upper_container img{
+        width: 15%;
+        margin: 0% 5%
+    }
+     #upper_container ul{
+        display: none;
+     }
+     .fa{
+        display: block;
+        font-size: 35px;
+        margin-left: 50%;
+    }
+    #middle_container1{
+        display: grid;
+        grid-template-columns:100%;
+        grid-template-rows: repeat(4,180px);
+        }
+    #middle_container2{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(6, 300px);
+        background-color: rgb(147, 216, 228);
+        }   
+    #tab{
+        grid-row: 2/3;
+    }
+    .tab-info{
+        background-color: rgb(197, 196, 196);
+        grid-row:1/2;
+        overflow: hidden;
+    }
+    #phone{
+        grid-row:4/5;
+    }
+    .phone-info{
+        background-color: rgb(189, 185, 173);
+        grid-row: 3/4;
+        overflow: hidden;
+    }
+    #pc{
+        grid-row:6/7;
+    }
+    .pc-info{
+        background-color:rgb(241, 169, 144);
+        grid-row:5/6;
+        overflow: hidden;
+    }
+    .img{
+        width:100%;
+        height:100%;
+    }
+    #middle_container3{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3, 290px);
+        background-color: rgb(147, 216, 228);
+    }
+    #footer_starts{
+        height: 100px;
+    }
+    i{
+        font-size: 2rem;
+     }
+        
+}
+
+@media screen and (min-width:660px) and (max-width:1100px) {
+    #upper_container{
+        height: 50vh;
+        background-size: 100% 50vh;
+     }
+    #upper_container ul{
+        width: 60%;
+    }
+    #upper_container ul li{
+        font-size: 1.5em;
+    }
+    #upper_container img{
+        width: 8%;
+        /* margin: 0% 5% */
+    }
+    #middle_container2{
+        display: grid;
+        grid-template-columns: repeat(50%, 50%);
+        grid-template-rows: repeat(3, 350px);
+        background-color: rgb(147, 216, 228);
+        }   
+    #tab{
+        grid-row: 1/2;
+    }
+    .tab-info{
+        background-color: rgb(197, 196, 196);
+        grid-row:1/2;
+        overflow: hidden;
+    }
+    .tab-info p{
+        margin-top:30px ;
+    }
+    #phone{
+        grid-row:3/4;
+    }
+    .phone-info{
+        background-color: rgb(189, 185, 173);
+        grid-row: 2/3;
+        overflow: hidden;
+    }
+    .phone-info p{
+        margin-top:30px ;
+    }
+    #pc{
+        grid-row:2/3;
+    }
+    .pc-info{
+        background-color:rgb(241, 169, 144);
+        grid-row:3/4;
+        overflow: hidden;
+    }
+    .pc-info p{
+        margin-top:30px ;
+    }
+    .img{
+        width:100%;
+        height:100%;
+    }
+    #middle_container3{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 350px;
+        background-color: rgb(147, 216, 228);
+    }
+    .tab-info p{
+        margin-top:30px ;
+
+    }
+}
+
+
